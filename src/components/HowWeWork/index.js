@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-
 import styles from './index.module.scss';
 
 function HowWeWork(props) {
@@ -32,7 +31,8 @@ function HowWeWork(props) {
 
           <article className={styles.stepItem}>
             <div className={styles.stepNumberBox}>
-              <p className={styles.stepNumber}>1</p>
+              {/* <p className={styles.stepNumber}>1</p> */}
+              1
             </div>
 
             <div className={styles.stepDetails}>
@@ -41,20 +41,21 @@ function HowWeWork(props) {
             </div>
           </article>
 
-          <article className={styles.stepItem1}>
-            <div className={styles.stepNumberBox}>
-              <p className={styles.stepNumber}>2</p>
+          <article className={styles.stepItem}>
+          <div className={styles.stepNumberBox}>
+              {/* <p className={styles.stepNumber}>1</p> */}
+              2
             </div>
-
-            <div className={styles.stepDetails1}>
+            <div className={styles.stepDetails}>
               <p className={styles.stepTitle}>Service</p>
               <p className={styles.stepDescription}>Service Description. This text describes the business step</p>
             </div>
           </article>
 
-          <article className={styles.stepItem1}>
-            <div className={styles.stepNumberBox}>
-              <p className={styles.stepNumber}>3</p>
+          <article className={styles.stepItem}>
+          <div className={styles.stepNumberBox}>
+              {/* <p className={styles.stepNumber}>1</p> */}
+              3
             </div>
 
             <div className={styles.stepDetails}>
@@ -63,12 +64,13 @@ function HowWeWork(props) {
             </div>
           </article>
 
-          <article className={styles.stepItem2}>
-            <div className={styles.stepNumberBox}>
-              <p className={styles.stepNumber}>4</p>
+          <article className={styles.stepItem}>
+          <div className={styles.stepNumberBox}>
+              {/* <p className={styles.stepNumber}>1</p> */}
+              4
             </div>
 
-            <div className={styles.stepDetails1}>
+            <div className={styles.stepDetails}>
               <p className={styles.stepTitle}>Service</p>
               <p className={styles.stepDescription}>Service Description. This text describes the business step</p>
             </div>

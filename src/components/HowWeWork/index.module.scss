@@ -16,7 +16,6 @@
   gap: 80px 0;
   margin: 60px auto 93px;
   width: 85%;
-  max-width: 1237.0390625px;
 
   @include xs {
     gap: 80px 0;
@@ -89,61 +88,44 @@
 
 .stepItem {
   display: flex;
-  justify-content: space-between;
-  gap: 0 10px;
+  // justify-content: space-between;
+  gap: 0 30px;
   grid-row: span 1;
   grid-column: span 1;
 
-  @include lg {
-    display: flex !important;
-    justify-content: flex-start;
-    column-gap: 40px;
-  }
-
-  @include tn {
-    column-gap: 8px;
+  @include md{
+    column-gap: 10px;
   }
 }
 
 .stepNumberBox {
   display: flex;
-  flex-direction: column;
-  margin: 0 0 76px;
+
+  margin-top: 10px;
   width: 60px;
-  min-width: 0;
+  height: 60px;
+  // min-width: 0;
+  align-items: center;
+  justify-content: center;
+  // padding: 30px, 30px;
   background-color: rgb(0, 0, 0);
   border-radius: 100%;
-
-  @include tn {
-    margin: 0 0 50px;
-  }
-}
-
-.stepNumber {
-  display: flex;
-  justify-content: center;
-  margin: 10px 19px;
   font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
   color: rgb(255 255 255);
-  text-align: center;
 
   @include md {
-    align-items: flex-start;
+    width: 55px;
+    height: 50px;
     font-size: 30px;
   }
 
-  @include xs {
-    margin: 10px 16px;
-  }
-
-  @include xxs {
+  @include md {
+    width: 50px;
+    height: 50px;
     font-size: 26px;
   }
-
-  @include tn {
-    margin: 10px 8px;
-  }
 }
+
 
 .stepDetails {
   display: flex;
@@ -156,9 +138,7 @@
 
 .stepTitle {
   display: flex;
-  justify-content: center;
-  width: 177px;
-  max-width: 85%;
+  justify-content: flex-start;
   font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -188,45 +168,3 @@
   }
 }
 
-.stepItem1 {
-  display: flex;
-  justify-content: space-between;
-  gap: 0 10px;
-  grid-row: span 1;
-  grid-column: span 1;
-
-  @include lg {
-    justify-content: flex-start;
-    column-gap: 40px;
-  }
-
-  @include tn {
-    column-gap: 8px;
-  }
-}
-
-.stepDetails1 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px 0;
-  margin: 10px 0 0;
-  width: 471px;
-  min-width: 0;
-}
-
-.stepItem2 {
-  display: flex;
-  justify-content: space-between;
-  gap: 0 10px;
-  grid-row: span 1;
-  grid-column: span 1;
-
-  @include lg {
-    justify-content: flex-start;
-    gap: 0 40px;
-  }
-
-  @include tn {
-    gap: 0 8px;
-  }
-}

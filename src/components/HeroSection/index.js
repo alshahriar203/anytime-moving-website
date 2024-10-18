@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-
+import toast, { Toaster } from 'react-hot-toast';
 import styles from './index.module.scss';
 
 function InputField(props){
@@ -315,7 +315,9 @@ function HeroSection(props) {
       });
 
       console.log('Form Submitted:', response.data);
+      toast.success('Form Submitted');
     } catch (error) {
+      toast.error('Error Submitting Form');
       console.error('Error submitting form:', error);
     }
 
@@ -370,6 +372,7 @@ function HeroSection(props) {
         {/* Render the current form */}
         {renderForm()}
       </div>
+      <Toaster />
     </section>
   );
 }
