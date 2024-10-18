@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-
+import CallButton from '../CallButton';
 import styles from './index.module.scss';
 
 function FooterFinal(props) {
@@ -14,18 +14,7 @@ function FooterFinal(props) {
         <div className={styles.mainContent}>
           <div className={styles.companyInfo}>
             <img className={styles.logo} src={'/assets/anytime-moving-logo.png'} alt="anytime moving logo" />
-            <button className={styles.quoteBtn} onClick={() => {
-    window.location.href = 'tel:9029438989';
-  }}>
-              <div className={styles.call}>
-                    <img
-                      className={styles.phoneIcon}
-                      src={'/assets/black-phone.svg'}
-                      alt="phone"
-                    />
-                    <p className={styles.phoneNumber}>902-943-8989</p>
-              </div>
-            </button>
+            <CallButton/>
               
             {/* <button className={styles.contactBtn}>
                 <span className={styles.contactBtnText}>Get Quote</span>

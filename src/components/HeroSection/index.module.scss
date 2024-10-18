@@ -163,6 +163,7 @@
   font: 600 16px/1.18 Inter, Helvetica, Arial, serif;
   color: rgb(62, 62, 62);
   padding: 10px 0 10px 10px;
+
   @include tn {
     padding: 10px 0 10px 8px;
   }

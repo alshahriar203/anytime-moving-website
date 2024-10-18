@@ -35,6 +35,17 @@ InputField.propTypes = {
 
 // First Form
 function QuoteForm1({ onNext, formData, handleChange }) {
+  const [error, setError] = useState("");
+
+  const handleNext = () => {
+    if (!formData.movingFrom || !formData.movingto) {
+      setError("Please fill out all fields.");
+    } else {
+      setError("");
+      onNext();
+    }
+  };
+
   return (
     <div className={styles.quoteForm}>
       <div className={styles.formTitleWrapper}>
@@ -56,7 +67,9 @@ function QuoteForm1({ onNext, formData, handleChange }) {
             onChange={handleChange}
             placeholder="Address/ZipCode"/>
 
-      <button className={styles.nextBtn} onClick={onNext}>Next</button>
+      {error && <p className={styles.errorMsg}>{error}</p>}
+
+      <button className={styles.nextBtn} onClick={handleNext}>Next</button>
     </div>
   );
 }
@@ -69,6 +82,18 @@ QuoteForm1.propTypes = {
 
 // Second Form
 function QuoteForm2({ onNext, onBack, formData, handleChange }) {
+  const [error, setError] = useState("");
+
+  const handleNext = () => {
+    if (!formData.name || !formData.phone || !formData.email) {
+      setError("Please fill out all fields.");
+    } else {
+      setError("");
+      onNext();
+    }
+  };
+
+
   return (
     <div className={styles.quoteForm}>
       <div className={styles.formTitleWrapper}>
@@ -95,10 +120,12 @@ function QuoteForm2({ onNext, onBack, formData, handleChange }) {
             value={formData.email}
             onChange={handleChange}
             placeholder="Email Address" />
+
+      {error && <p className={styles.errorMsg}>{error}</p>}
       
       <div className={styles.buttons}>
         <button className={styles.backBtn} onClick={onBack}>Back</button>
-        <button className={styles.nextBtn} onClick={onNext}>Next</button>
+        <button className={styles.nextBtn} onClick={handleNext}>Next</button>
       </div>
     </div>
   );

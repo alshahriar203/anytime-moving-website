@@ -2,8 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-
 import styles from './index.module.scss';
+import CallButton from '../CallButton';
 
 function Navbar(props) {
   return (
@@ -11,7 +11,7 @@ function Navbar(props) {
       {/* Header section with navigation and contact information */}
 
       <div className={styles.headerContent}>
-      <img className={styles.logo} src={'/assets/anytime-moving-logo.png'} alt="anytime moving logo" />
+      <img className={styles.logo} src={'/assets/anytime-moving-logo.png'} alt="anytime moving logo"/>
 
         <nav className={styles.navigationMenu}>
           {/* Main navigation menu */}
@@ -29,17 +29,8 @@ function Navbar(props) {
           </div>
         </nav>
 
-        
-        <div className={styles.contactInfo}>
-        <button className={styles.quoteBtn} onClick={() => {
-          window.location.href = 'tel:9029438989';
-        }}>
-          <div className={styles.phoneContainer}>
-            <img className={styles.phoneIcon} src={'/assets/black-phone.svg'} alt="phone" />
-            <p className={styles.phoneNumber}>(+880) 01730854112</p>
-          </div>
-        </button>
-        </div>
+        <CallButton/>
+
       </div>
     </section>
   );
