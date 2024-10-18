@@ -1,0 +1,14 @@
+@use "../styles/utils.scss" as *;
+@use "../styles/global.scss" as *;
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: flex-start;
+  overflow: hidden;
+
+  @include mq-between(xl, xxl) {
+    column-gap: 0;
+  }
+}

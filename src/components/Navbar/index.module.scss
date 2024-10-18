@@ -1,0 +1,103 @@
+@use "../../styles/utils.scss" as *;
+@use "../../styles/global.scss" as *;
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+
+  width:85%;
+  margin: 10px 0;
+}
+
+.logo{
+  width: clamp(150px, 20vw, 268px);
+}
+
+
+.navigationMenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 356px;
+  min-width: 0;
+
+  @include lg {
+    display: none !important;
+  }
+}
+
+
+.navLink {
+  display: flex;
+  justify-content: center;
+  font: 900 18px/1.22 Inter, Helvetica, Arial, serif;
+  color: rgb(49, 146, 250);
+  // color: rgb(135 189 251); 
+  text-align: center;
+}
+
+
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 0 18px;
+  // width: 469px;
+  min-width: 0;
+
+}
+
+.phoneContainer {
+  display: flex;
+  gap: 0 7px;
+  // width: 286px;
+  min-width: 0;
+  @include xxs {
+    display: none !important;
+  }
+}
+
+.phoneIcon {
+  width: 32px;
+  object-fit: cover;
+
+}
+
+.phoneNumber {
+  margin: 2px 0;
+  font: 900 23px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+
+  
+  
+}
+
+.quoteBtn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  // background-color: rgb(255 59 59);
+  border-radius: 50px;
+  // border: solid;
+  // border-color: red;  
+  padding: 22px 34px;
+  letter-spacing: -0.2px;
+
+  &:hover{
+    color: rgb(255 59 59);
+    border: solid;
+  }
+
+  @include sm {
+    display: none !important;
+  }
+}

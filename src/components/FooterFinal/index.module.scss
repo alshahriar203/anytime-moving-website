@@ -1,0 +1,210 @@
+@use "../../styles/utils.scss" as *;
+@use "../../styles/global.scss" as *;
+
+.movingCompanySection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
+  margin: 30px auto 10px;
+  width: 85%;
+  max-width: 1338.9375px;
+
+  @include tn {
+    gap: 50px 0;
+  }
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 100%;
+  align-content: center;
+
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0;
+  min-width: 0;
+
+  @include md {
+    width: 232px;
+    margin: 0;
+
+  }
+}
+
+.logo{
+  width: clamp(150px, 20vw, 268px);
+}
+
+.call{
+  display: flex;
+  flex-direction: row;
+  gap: 0 7px;
+  width: clamp(0px, 232px, 232px);
+}
+
+.phoneIcon {
+  width: 32px;
+  object-fit: cover;
+}
+
+.phoneNumber {
+  margin: 2px 0;
+  font: 900 23px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+}
+
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+.contactBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 5px;
+  // width: 232px;
+  max-width: 100%;
+  background-color: rgb(135 189 251);
+  border-radius: 27.5px;
+  padding: 19.5px 29px;
+  // outline: 2px solid rgb(28 36 75);
+  outline-offset: -2px;
+}
+
+.contactBtnText {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  font: 700 20px/1 Poppins, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contactBtnIcon {
+  width: 16px;
+  min-width: 0;
+}
+
+.quoteBtn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  // background-color: rgb(255 59 59);
+  border-radius: 50px;
+  // border: solid;
+  // border-color: red;  
+  padding: 22px 34px;
+  letter-spacing: -0.2px;
+
+  &:hover{
+    color: rgb(255 59 59);
+    border: solid;
+  }
+
+  @include sm {
+    display: none !important;
+  }
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  width: 772px;
+  min-width: 0;
+
+  @include md {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.companyDescription {
+  font: 400 20px/1.6 Rubik, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.navigationMenu {
+  display: flex;
+  flex-direction: column;
+  width: 131px;
+  min-width: 0;
+
+  @include md {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.menuTitle {
+  font: 600 20px/1.39 Rubik, Helvetica, Arial, serif;
+  color: rgb(49, 146, 250);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+
+.menuItem{
+  margin: 10px 0 0;
+  font: 400 16px/1.6 Rubik, Helvetica, Arial, serif;
+  color: rgb(49, 146, 250);
+  
+}
+
+.copyrightInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 300 16px/1.5 Poppins, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}

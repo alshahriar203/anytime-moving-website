@@ -1,0 +1,150 @@
+@use "../../styles/utils.scss" as *;
+@use "../../styles/global.scss" as *;
+
+.whyChooseUsSection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 50px;
+  margin: 50px auto;
+  width: 85%;
+  // max-width: 1286.9609375px;
+
+  @include lg {
+    flex-direction: column;
+    gap: 80px 0;
+  }
+}
+
+.descriptionColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 50px 0;
+  width: 608px;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include xs {
+    gap: 80px 0;
+  }
+
+  @include tn {
+    gap: 50px 0;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  width: 259px;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: flex-start;
+  font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(49, 146, 250);
+  text-align: left;
+  letter-spacing: -0.2px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+
+  @include xxs {
+    font-size: 26px;
+  }
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionDescription {
+  font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 22px;
+  }
+}
+
+.featuresColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  width: 607px;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0 29px;
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.featureIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.featureText {
+  font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: -0.1px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 22px;
+  }
+}
+
+.featureText1 {
+  font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 22px;
+  }
+}

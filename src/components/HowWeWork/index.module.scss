@@ -1,0 +1,232 @@
+@use "../../styles/utils.scss" as *;
+@use "../../styles/global.scss" as *;
+.workProcessSection {
+  display: flex;
+  flex-direction: column;
+  // background: var(--src) center center / cover no-repeat;
+  // background-color: rgb(132 159 255);
+  background-color: rgb(49, 146, 250);
+  width: 100%;
+}
+
+.processContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px 0;
+  margin: 60px auto 93px;
+  width: 85%;
+  max-width: 1237.0390625px;
+
+  @include xs {
+    gap: 80px 0;
+    margin: 60px auto 80px;
+  }
+
+  @include tn {
+    gap: 50px 0;
+    margin: 50px auto;
+  }
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  // width: 227.984375px;
+  width: 85%;
+  gap: 50px 0;
+}
+
+.sectionHeading {
+  display: flex;
+  justify-content: center;
+  font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+
+  @include xxs {
+    font-size: 26px;
+  }
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceDetails {
+  font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+
+  @include md {
+    // align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 22px;
+  }
+}
+
+.processStepsGrid {
+  display: grid;
+  align-content: start;
+  gap: 80px;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @include lg {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.stepItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  grid-row: span 1;
+  grid-column: span 1;
+
+  @include lg {
+    display: flex !important;
+    justify-content: flex-start;
+    column-gap: 40px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.stepNumberBox {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 76px;
+  width: 60px;
+  min-width: 0;
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+
+  @include tn {
+    margin: 0 0 50px;
+  }
+}
+
+.stepNumber {
+  display: flex;
+  justify-content: center;
+  margin: 10px 19px;
+  font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+
+  @include xs {
+    margin: 10px 16px;
+  }
+
+  @include xxs {
+    font-size: 26px;
+  }
+
+  @include tn {
+    margin: 10px 8px;
+  }
+}
+
+.stepDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  margin: 10px 0 0;
+  width: 472px;
+  min-width: 0;
+}
+
+.stepTitle {
+  display: flex;
+  justify-content: center;
+  width: 177px;
+  max-width: 85%;
+  font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: -0.31px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+
+  @include xxs {
+    font-size: 26px;
+  }
+}
+
+.stepDescription {
+  font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 22px;
+  }
+}
+
+.stepItem1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  grid-row: span 1;
+  grid-column: span 1;
+
+  @include lg {
+    justify-content: flex-start;
+    column-gap: 40px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.stepDetails1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  margin: 10px 0 0;
+  width: 471px;
+  min-width: 0;
+}
+
+.stepItem2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  grid-row: span 1;
+  grid-column: span 1;
+
+  @include lg {
+    justify-content: flex-start;
+    gap: 0 40px;
+  }
+
+  @include tn {
+    gap: 0 8px;
+  }
+}

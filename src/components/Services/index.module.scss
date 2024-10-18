@@ -1,0 +1,187 @@
+@use "../../styles/utils.scss" as *;
+@use "../../styles/global.scss" as *;
+
+.servicesSection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(159, 203, 250);
+  width: 100%;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 85px 0;
+  margin: 50px auto 77px;
+  width: 97.24%;
+  max-width: 1407px;
+
+  @include xs {
+    gap: 80px 0;
+  }
+
+  @include tn {
+    gap: 50px 0;
+    margin: 50px auto;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(49, 146, 250);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+
+  @include xxs {
+    font-size: 26px;
+  }
+}
+
+.servicesList {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.serviceCard {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 442px;
+  min-width: 0;
+
+  @include lg {
+    justify-content: center;
+    column-gap: 10px;
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.serviceIcon {
+  width: 120px;
+  min-width: 0;
+  object-fit: cover;
+}
+
+.serviceDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 27px 0;
+  margin: 0 0 15px;
+  width: 290px;
+  min-width: 0;
+}
+
+.serviceTitleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceTitle {
+  width: 187px;
+  max-width: 85%;
+  font: 700 20px/1.2 Inter, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.serviceDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceDescription {
+  font: 600 15px/1.2 Inter, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+}
+
+.serviceCard1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 443px;
+  min-width: 0;
+
+  @include lg {
+    justify-content: center;
+    column-gap: 10px;
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.serviceDetails1 {
+  display: flex;
+  flex-direction: column;
+  gap: 27px 0;
+  margin: 0 0 15px;
+  width: 291px;
+  min-width: 0;
+}
+
+.serviceTitle1 {
+  width: 196px;
+  max-width: 85%;
+  font: 700 20px/1.2 Inter, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.serviceTitle2 {
+  width: 172px;
+  max-width: 85%;
+  font: 700 20px/1.2 Inter, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}

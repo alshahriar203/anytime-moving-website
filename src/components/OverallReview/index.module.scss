@@ -1,0 +1,51 @@
+@use "../../styles/utils.scss" as *;
+@use "../../styles/global.scss" as *;
+.ratingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: rgb(255 255 255);
+  // border-radius: 14px;
+  // box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.ratingTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0;
+  font: 700 24px/1.39 Roboto, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+  text-align: center;
+}
+
+.ratingIcon {
+  margin: 13px 0 0;
+  width: 100%;
+}
+
+.reviewSummary {
+  font: 400 14px/1.4 Roboto, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+  text-align: center;
+}
+
+.reviewSummary_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 13px 0 0;
+}
+
+.reviewSummary_span0 {
+  font: 1em/1.4 Roboto, Helvetica, Arial, serif;
+}
+
+.reviewSummary_span1 {
+  font: 700 1em/1.4 Roboto, Helvetica, Arial, serif;
+}
+
+.starRatingImage {
+  margin: 13px 0 0;
+  width: 52%;
+}

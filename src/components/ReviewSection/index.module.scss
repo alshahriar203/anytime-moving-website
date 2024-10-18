@@ -1,0 +1,177 @@
+@use "../../styles/utils.scss" as *;
+@use "../../styles/global.scss" as *;
+.reviewsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0;
+  width: 100%;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 50px;
+  // width: 137.2265625px;
+  max-width: 85%;
+  font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+
+  @include xxs {
+    font-size: 26px;
+  }
+}
+
+.reviewsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 85px auto 50px;
+  width: 90.71%;
+  max-width: 1318.015625px;
+
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+
+  @include xs {
+    margin: 80px auto 50px;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  width: 386px;
+  // min-width: 0;
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 2px rgb(0 0 0 / 25%);
+
+  @include md {
+    width: clamp(350px, 80%, 500px);
+  }
+}
+
+.reviewContent {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px 15px;
+  width: 85.22%;
+
+  @include tn {
+    margin: 10px 0 20px 8px;
+  }
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.userInfo {
+  display: flex;
+  gap: 0 10px;
+  width: 152px;
+  min-width: 0;
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.userAvatar {
+  width: 56px;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px;
+  width: 86px;
+  min-width: 0;
+}
+
+.userName {
+  display: flex;
+  align-items: center;
+  font: 700 14px/1.5 Jaro, Helvetica, Arial, serif;
+  color: rgb(20 27 56);
+}
+
+.reviewTime {
+  display: flex;
+  align-items: center;
+  margin: 0 24px 0 0;
+  font: 400 13px/1.5 Jaro, Helvetica, Arial, serif;
+  color: rgb(67 73 96);
+
+  @include xs {
+    margin: 0 16px 0 0;
+  }
+
+  @include tn {
+    margin: 0 8px 0 0;
+  }
+}
+
+.moreOptionsBtn {
+  width: 24px;
+  object-fit: cover;
+}
+
+.ratingStars {
+  display: flex;
+  gap: 0 4px;
+  margin: 19px 0 0;
+}
+
+.starIcon {
+  width: 16px;
+  object-fit: cover;
+}
+
+.image3 {
+  width: 16px;
+  object-fit: cover;
+}
+
+.reviewText {
+  display: flex;
+  align-items: center;
+  margin: 29px 16px 0 0;
+  font: 400 16px/1.5 Jaro, Helvetica, Arial, serif;
+  color: rgb(85 73 72);
+
+  @include tn {
+    margin: 29px 8px 0 0;
+  }
+}
