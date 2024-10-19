@@ -9,3 +9,29 @@ $fallback-font-stack: Helvetica, Arial, serif;
     margin: 10px 0;
     color: rgb(253, 53, 53);
 }
+
+.bigTitle{
+    font: 900 41px/1.21 Inter, Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+      
+    @include md {
+        align-items: flex-start;
+        font-size: 38px;
+    }
+      
+    @include xxs {
+        font-size: 34px;
+    }
+}
+
+.smallTitle{
+
+}
+
+.bigText{
+
+}
+
+.smallText{
+
+}
