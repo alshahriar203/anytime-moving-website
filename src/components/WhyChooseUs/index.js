@@ -28,28 +28,28 @@ function WhyChooseUs(props) {
           {/* Features List */}
 
           <div className={styles.featureItem}>
-            <img className={styles.featureIcon} src={'/assets/briefcase-solid-blue.svg'} alt="alt text" />
+            <img className={styles.featureIcon} src={'/assets/briefcase-solid-blue.svg'} alt="professional-icon" />
             <figcaption className={styles.featureText}>Experienced Professional</figcaption>
           </div>
 
           <div className={styles.featureItem}>
-            <img className={styles.featureIcon} src={'/assets/clock-regular-blue.svg'} alt="alt text" />
+            <img className={styles.featureIcon} src={'/assets/clock-regular-blue.svg'} alt="punctual-icon" />
             <figcaption className={styles.featureText}>Flexible Scheduling and Timely Delivery</figcaption>
           </div>
 
           <div className={styles.featureItem}>
-            <img className={styles.featureIcon} src={'/assets/wrench-blue.svg'} alt="alt text" />
+            <img className={styles.featureIcon} src={'/assets/wrench-blue.svg'} alt="custom-solution-icon" />
             <figcaption className={styles.featureText}>Custom Moving Solution</figcaption>
           </div>
 
           <div className={styles.featureItem}>
-            <img className={styles.featureIcon} src={'/assets/lock-solid-blue.svg'} alt="alt text" />
+            <img className={styles.featureIcon} src={'/assets/lock-solid-blue.svg'} alt="security-icon" />
             <figcaption className={styles.featureText}>Safe and Secure Handling</figcaption>
           </div>
 
           <div className={styles.featureItem}>
-            <img className={styles.featureIcon} src={'/assets/dollar-sign-solid-blue.svg'} alt="alt text" />
-            <figcaption className={styles.featureText1}>Affordable Rates</figcaption>
+            <img className={styles.featureIcon} src={'/assets/dollar-sign-solid-blue.svg'} alt="affordable-ico" />
+            <figcaption className={styles.featureText}>Affordable Rates</figcaption>
           </div>
         </div>
       </div>

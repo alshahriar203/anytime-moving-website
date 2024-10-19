@@ -1,11 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import OverallReview from '../OverallReview';
 import styles from './index.module.scss';
 
+
+// OverallReview component
+function OverallReview() {
+  return (
+    <section className={cn(styles.ratingContainer, 'overall-review')}>
+      <h2 className={styles.ratingTitle}>Excellent</h2>
+      <img className={styles.ratingIcon} src={'/assets/yellow-stars-rating.svg'} alt="rating-stars" />
+      <p className={styles.reviewSummary_box}>
+        <span className={styles.reviewSummary}>
+          <span className={styles.reviewSummary_span0}>Based on </span>
+          <span className={styles.reviewSummary_span1}>150 reviews</span>
+        </span>
+      </p>
+      <img className={styles.starRatingImage} src={'/assets/google.svg'} alt="Google" />
+    </section>
+  );
+}
+
+
+
 // ReviewCard component
-function ReviewCard({ userName, reviewTime, userAvatar, reviewText, ratingStars, moreOptionsIcon }) {
+function ReviewCard({ userName, reviewTime, userAvatar, reviewText, ratingStars}) {
   return (
     <article className={styles.reviewCard}>
       <div className={styles.reviewContent}>
@@ -19,7 +38,7 @@ function ReviewCard({ userName, reviewTime, userAvatar, reviewText, ratingStars,
             </div>
           </div>
 
-          <img className={styles.moreOptionsBtn} src={moreOptionsIcon} alt="More options" />
+          <img className={styles.moreOptionsBtn} src={'/assets/green-star.svg'} alt="More options" />
         </div>
 
         <div className={styles.ratingStars}>
@@ -29,7 +48,7 @@ function ReviewCard({ userName, reviewTime, userAvatar, reviewText, ratingStars,
               <img
                 key={index}
                 className={styles.starIcon}
-                src={'/assets/036dbf9383b24d2342cd1672b944bfd3.svg'}
+                src={'/assets/blue-star.svg'}
                 alt="star"
               />
             ))}
@@ -41,6 +60,8 @@ function ReviewCard({ userName, reviewTime, userAvatar, reviewText, ratingStars,
   );
 }
 
+
+
 ReviewCard.propTypes = {
   userName: PropTypes.string.isRequired,
   reviewTime: PropTypes.string.isRequired,
@@ -50,35 +71,33 @@ ReviewCard.propTypes = {
   moreOptionsIcon: PropTypes.string.isRequired,
 };
 
+
 // ReviewSection component
 function ReviewSection(props) {
   const reviews = [
     {
       userName: 'Conor Lansdale',
       reviewTime: '8 hours ago',
-      userAvatar: '/assets/a14ebde15a80c6dcd89c0ca448413ef2.png',
+      userAvatar: '/assets/avatar-example.png',
       reviewText:
         'Bruce (great driver), but wished the inventory was recorded in a digital format so it would be easier to complete upon delivery and for expense reporting.',
       ratingStars: 5,
-      moreOptionsIcon: '/assets/9fe4bcfbeb3e7f5d095c67e6f7a1e46d.svg',
     },
     {
       userName: 'Conor Lansdale',
       reviewTime: '8 hours ago',
-      userAvatar: '/assets/a14ebde15a80c6dcd89c0ca448413ef2.png',
+      userAvatar: '/assets/avatar-example.png',
       reviewText:
         'Bruce (great driver), but wished the inventory was recorded in a digital format so it would be easier to complete upon delivery and for expense reporting.',
       ratingStars: 5,
-      moreOptionsIcon: '/assets/44c65ea09dc1bd87d57e0390eb4b6097.svg',
     },
     {
       userName: 'Conor Lansdale',
       reviewTime: '8 hours ago',
-      userAvatar: '/assets/a14ebde15a80c6dcd89c0ca448413ef2.png',
+      userAvatar: '/assets/avatar-example.png',
       reviewText:
         'Bruce (great driver), but wished the inventory was recorded in a digital format so it would be easier to complete upon delivery and for expense reporting.',
       ratingStars: 5,
-      moreOptionsIcon: '/assets/9f4943c0d93a1fb20d42d7a35ff289cf.svg',
     },
   ];
 
@@ -102,7 +121,6 @@ function ReviewSection(props) {
             userAvatar={review.userAvatar}
             reviewText={review.reviewText}
             ratingStars={review.ratingStars}
-            moreOptionsIcon={review.moreOptionsIcon}
           />
         ))}
       </div>

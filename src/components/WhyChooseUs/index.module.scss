@@ -134,17 +134,3 @@
     font-size: 22px;
   }
 }
-
-.featureText1 {
-  font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
-  color: rgb(0, 0, 0);
-
-  @include md {
-    align-items: flex-start;
-    font-size: 24px;
-  }
-
-  @include xxs {
-    font-size: 22px;
-  }
-}
